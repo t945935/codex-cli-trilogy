@@ -1,0 +1,32 @@
+# Codex CLI Trilogy｜讀者範例
+
+這是《Codex CLI 入門／實例演習／聰明用》的公開讀者服務倉庫，提供可下載的練習素材、範例專案、提示模板與自我檢核表；不提供完整章節、未公開稿件或電子書檔。
+
+倉庫：https://github.com/t945935/codex-cli-trilogy
+
+## 取得方式
+
+有 Git：
+
+```bash
+git clone https://github.com/t945935/codex-cli-trilogy.git
+cd codex-cli-trilogy
+```
+
+不使用 Git：開啟 GitHub 頁面，選 Code → Download ZIP，解壓後進入 `examples/`。
+
+## 從哪裡開始
+
+- 第一本《Codex CLI 入門》：`examples/book-1/`，從 `starter/` 開始，練習先讀專案、提出小修改，再檢查差異與測試。
+- 第二本《Codex CLI 實例演習》：`examples/book-2/`，以有缺陷的範例、測試及任務卡練習重現問題、修正與驗證。
+- 第三本《Codex CLI 聰明用》：`examples/book-3/`，提供任務提示模板、專案指引範本及安全檢核表。
+
+各資料夾的 README 說明練習目標及執行方式。範例是教學素材，不代表適用於所有正式專案；執行前請先閱讀檔案與指令，並在自己的練習副本操作。
+
+## 注意
+
+Codex CLI 的安裝、登入、指令、旗標及功能會更新。請以 OpenAI 官方文件為準：
+- https://developers.openai.com/codex/cli
+- https://developers.openai.com/codex/cli/reference
+
+本倉庫不要求讀者提交憑證、API 金鑰或私人專案內容。練習中若 Codex 建議執行會刪除資料、連線外部服務或改動練習目錄以外檔案的命令，先停下來確認影響。
