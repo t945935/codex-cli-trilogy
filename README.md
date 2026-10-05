@@ -18,7 +18,7 @@ cd codex-cli-trilogy
 ## 從哪裡開始
 
 - 第一本《Codex CLI 入門》：`examples/book-1/`，從 `starter/` 開始；`chapter-examples.md` 有全章練習卡，`solution/` 是完成後再對照的參考實作。
-- 第二本《Codex CLI 實例演習》：`examples/book-2/`，`chapter-examples.md` 覆蓋各章演習；以刻意保留缺陷的搜尋範例練習重現、修正，並可用獨立參考解答核對。
+- 第二本《Codex CLI 實例演習》：`examples/book-2/`，`chapter-examples.md` 覆蓋各章演習；以刻意保留缺陷的搜尋範例練習重現、修正，並可用獨立參考解答核對。`todo-project/` 提供延續第一冊的功能案例起始版和參考實作。
 - 第三本《Codex CLI 聰明用》：`examples/book-3/`，`chapter-examples.md` 提供各章情境卡，並有任務提示模板、專案指引範本及安全檢核表。
 
 各資料夾的 README 說明練習目標及執行方式。範例是教學素材，不代表適用於所有正式專案；執行前請先閱讀檔案與指令，並在自己的練習副本操作。

@@ -1,0 +1,7 @@
+{
+  "schema_version": 2,
+  "tasks": [
+    {"id": 1, "text": "Review API design", "completed": false},
+    {"id": 2, "text": "Write release notes", "completed": true}
+  ]
+}
