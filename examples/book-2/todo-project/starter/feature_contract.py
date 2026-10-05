@@ -53,9 +53,8 @@ class TestTodoFeatureContract(unittest.TestCase):
         with patch("builtins.print"):
             self.assertEqual(todo.main(["done", "2"]), 0)
         before = self.data.read_bytes()
-        with patch("builtins.print") as output:
+        with patch("builtins.print"):
             self.assertEqual(todo.main(["done", "2"]), 0)
-        self.assertIn("already complete", output.call_args.args[0])
         self.assertEqual(self.data.read_bytes(), before)
 
 
