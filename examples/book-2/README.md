@@ -7,10 +7,12 @@
 需要 Python 3。在此資料夾執行：
 
 ```bash
-python3 -m unittest -v
+python3 -m unittest -v test_search_tasks.py
 ```
 
 第一輪預期有一個測試失敗：搜尋目前區分大小寫，但案例需求是不區分大小寫。先記錄失敗，再請 Codex 修正最小範圍並保留所有測試通過。若出現匯入或語法錯誤，代表沒有重現預期缺陷，先處理測試環境或檔案內容。
+
+完成自行修正後，可對照 `solution_search_tasks.py`，並執行 `python3 -m unittest -v test_solution_search_tasks.py` 檢查參考行為。參考解答是另一個模組，不會覆蓋刻意留錯的練習版本。
 
 驗收條件：`"API"`、`"api"` 及混合大小寫查詢皆能找到相同待辦；空字串查詢不回傳結果；原始待辦文字在輸出中保留大小寫。
 
