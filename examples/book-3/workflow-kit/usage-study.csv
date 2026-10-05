@@ -1,0 +1,1 @@
+task_id,task_class,date,cli_version,model_label,reasoning_setting,sandbox,approval_policy,elapsed_minutes,clarification_rounds,rework_rounds,tests_passed,tests_total,review_findings_verified,usage_indicator_source,usage_indicator_value,acceptance_status,notes_sanitized
