@@ -9,9 +9,9 @@
 | 3 專案指引 | 為練習專案挑短小且可測的常駐規則，檢查載入來源 | 規則沒有互相矛盾；不把 `AGENTS.md` 誤當 sandbox | `AGENTS.example.md` |
 | 4 上下文管理 | 將一項功能拆成盤點、實作、驗收三段並交接 | 摘要區分已證實事實、決策、未驗證項 | `workflow-kit/handoff-template.md` |
 | 5 權限與沙箱 | 把任務分成唯讀、工作區修改和外部副作用 | 能指出技術 sandbox 與 approval policy 差異 | `workflow-kit/risk-decision-matrix.md` |
-| 6 執行命令與自動化 | 對公用練習 clone 做一次唯讀 `codex exec` 檢查 | 明確 model、目錄、唯讀 sandbox；失敗 exit status 會停止 | `workflow-kit/workflow-checklist.md` |
+| 6 執行命令與自動化 | 對公用練習 clone 做一次唯讀 `codex exec` 檢查 | 區分暫存檔 setup 與 CLI 失敗；保留 CLI 原始退出碼，仍獨立核對輸出 | `workflow-kit/workflow-checklist.md` |
 | 7 MCP 與外部工具 | 評估一個假想文件 server，先畫資料流、不安裝 | 說清 server 來源、讀寫工具、認證、批准和撤銷 | `workflow-kit/mcp-server-review.md` |
-| 8 Skills／Plugins | 評估一個候選擴充的指令、腳本、來源和移除方式 | 採用／隔離試用／不採用均有依據 | `workflow-kit/extension-review.md` |
+| 8 Skills／Plugins | 以資訊不足的假想候選作採用前篩選，列出缺件與翻轉條件 | 暫不採用；不宣稱完成逐檔審查、試用或撤回 | `workflow-kit/extension-review.md` |
 | 9 團隊品質閘門 | 為一個小 PR 指派需求、實作、review、發布責任 | 每個 gate 有負責人和可檢查證據 | `workflow-kit/team-gates.md` |
 | 10 成本與模型選擇 | 用相同任務與驗收條件比較設定，保留未取得欄位為空 | 不以一次或小樣本聲稱普遍最佳模型 | `workflow-kit/usage-study.csv` |
 | 11 失敗復盤 | 分析一個錯誤 exit status 的測試變異，追到可重現根因 | 預防改善能由測試或 gate 驗證 | `workflow-kit/failure-review.md` |

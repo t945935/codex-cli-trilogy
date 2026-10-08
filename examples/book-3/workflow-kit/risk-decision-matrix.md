@@ -13,6 +13,12 @@
 - 預期讀取和寫入哪些路徑？哪些路徑含憑證或敏感資料？
 - 要執行的命令是否會連外、安裝、部署、刪除或改變遠端狀態？
 - 失敗時能否從 Git／備份還原？誰負責批准不可逆步驟？
-- 目前 CLI 的 `/status` 或啟動旗標是否顯示預期工作目錄、sandbox、approval policy？
+- 依使用介面分開核對設定：互動 TUI 的 `/status` 是否顯示預期工作目錄、sandbox、approval policy？若使用非互動 `codex exec`，是否查過本機 `codex --help` 與 `codex exec --help`，確認明確旗標及正確位置並記錄完整命令？
+
+### 介面不同，設定證據也不同
+
+- **互動 TUI**：進入該 session 後用 `/status` 檢視畫面顯示的工作目錄、sandbox、approval policy。這只證明所示設定，不證明資料授權或命令沒有其他副作用。
+- **非互動 `codex exec`**：沒有 TUI `/status`。先分別查看全域與子命令 help，再以本機版本接受的方式明確指定設定；全域旗標的位置可能與子命令旗標不同。用完整 help 形式測參數排列不會送出任務，例如 `codex --ask-for-approval never exec --sandbox read-only --help`，但不能假設其他版本接受同一排列。記錄版本、cwd、完整實際命令、退出狀態及輸出位置。命令列可證明操作者明確傳入哪些設定，不能單獨證明組織層政策或 runtime 強制邊界；無法核實有效設定就停止。
+- `--ask-for-approval never` 只適用於組織政策允許、且不需等待人工批准的非互動任務；它不等於 `on-request`。若必須逐次批准，改走支援互動批准的 TUI，明確設定後以 `/status` 核對；不可為了讓 `exec` 繼續而取消批准要求。
 
 任何答案未知時，先縮小目錄、改成唯讀探查或詢問負責人。不要使用 `--dangerously-bypass-approvals-and-sandbox` 來省略安全判斷。旗標及平台邊界以當版官方文件為準。

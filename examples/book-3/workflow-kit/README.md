@@ -6,7 +6,7 @@
 - `handoff-template.md`：跨對話交接，分開事實、測試證據和待決事項。
 - `risk-decision-matrix.md`：唯讀、工作區寫入、外部副作用任務的風險及停手條件。
 - `mcp-server-review.md`：外部 MCP 連線的資料流、工具、認證和撤銷檢查。
-- `extension-review.md`：Skills／Plugins 的來源、信任、範圍和移除方式。
+- `extension-review.md`：Skills／Plugins 採用前的來源資訊與缺件篩選；不是完整安全審查、試用或撤回記錄。
 - `team-gates.md`：團隊分支、測試、差異審查和責任閘門。
 - `failure-review.md`：失敗後的時間線、影響、根因與可驗證改善。
 - `workflow-checklist.md`：將本書做法串成一次可重跑的工作流程。
